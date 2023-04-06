@@ -1,0 +1,42 @@
+.taskContainer {
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.listContainer {
+  height: 100px;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px gray;
+  border-radius: 15px;
+  border: 2px solid gray;
+}
+
+.upperContainer {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.buttonContainer button {
+  height: 90%;
+  width: 40%;
+  background-color: lightcoral;
+  color: navy;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px;
+}

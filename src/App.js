@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import { useContext } from 'react';
 import './App.css';
+import Todo from './Components/Todo';
+import { Global } from './Components/store';
+import Tasks from './Components/Tasks';
 
 function App() {
+  const {todoArr} = useContext(Global)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{textAlign:"center"}}>TO-DO App</h1>
+     <Todo/>
+     {todoArr.length > 0 ? <Tasks/> : null}
     </div>
   );
 }

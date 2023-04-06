@@ -1,0 +1,30 @@
+.todo {
+  height: 8%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo input {
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 20%;
+  border: none;
+  height: 70%;
+  padding-left: 10px;
+  border: none;
+}
+
+.todo button {
+  background-color: lightsalmon;
+  color: navy;
+  font-weight: bold;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 7%;
+  border: none;
+  height: 70%;
+  cursor: pointer;
+}
